@@ -1,0 +1,18 @@
+<div class="container d-flex justify-content-center" id="creationMargin">
+    <div class="Column">
+        <h2>New Post</h2>
+        <form [formGroup]="newPostForm" placeholder="title of Post" id="newPost-form" class="form" action="" method="post" (ngSubmit)="submitPost()">
+            <div class="form-group">
+                <label for="title">Title:</label><br>
+                <input type="text" placeholder="title of Post" class="form-control" formControlName="title" id="textAreaExample2" rows="8" name="title" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="body">Body:</label><br>
+                <textarea placeholder="body of Post" class="form-control" formControlName="body" id="textAreaExample2" rows="8" name="body" id="body" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-primary btn-block mt-3" type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>

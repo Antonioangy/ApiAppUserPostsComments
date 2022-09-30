@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  localhostPost: "http://localhost:3000/posts",
+  localhostUser: "http://localhost:3000/signupUser",
+  localhostComment: 'http://localhost:3000/comments',
 };
 
 /*
